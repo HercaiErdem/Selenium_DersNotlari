@@ -1,9 +1,9 @@
-package odevler;
+package day02;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Odev1 {
+public class C01_Odev01 {
     public static void main(String[] args) {
 
 
@@ -28,7 +28,7 @@ public class Odev1 {
         driver.get("https://amazon.com");
 
         //Sayfa basligini(title) yazdirin
-        System.out.println("Actual page: " + driver.getTitle());
+        System.out.println("Sayfa basligi: " + driver.getTitle());
 
         // Sayfa basliginin “Amazon” icerdigini test edin
 
@@ -39,22 +39,29 @@ public class Odev1 {
         } else System.out.println("Title Test FAILED");
 
         //Sayfa adresini(url) yazdirin
-        System.out.println("Url adresi: " + driver.getCurrentUrl());
+        System.out.println("Sayfanin Url adresi: " + driver.getCurrentUrl());
+
+        //Sayfa url’inin “amazon” icerdigini test edin.
+        String actualUrl = driver.getCurrentUrl();
+        String expectedUrl = "amazon";
+        if (actualUrl.contains(expectedUrl)) {
+            System.out.println("Url testi PASSED");
+        } else System.out.println("Url testi FAILED");
 
         // Sayfa handle degerini yazdirin
         System.out.println("Handle degeri: " + driver.getWindowHandle());
 
         //Sayfa HTML kodlarinda “Gateway” kelimesi gectigini test
-        String olanKelime = driver.getCurrentUrl();
+        String olanKelime = driver.getPageSource();
         String olmasiniBekledigimizKelime = "Gateway";
 
         if (olanKelime.contains(olmasiniBekledigimizKelime)) {
-            System.out.println("Url Test PASSED");
+            System.out.println("Sourcepage Testi PASSED");
         } else {
-            System.out.println("Url Test FAILED");
+            System.out.println("Sourcepage Test FAILED");
         }
 
-        //   Sayfayi kapatin.
+        // Sayfayi kapatin.
         driver.close();
 
 
