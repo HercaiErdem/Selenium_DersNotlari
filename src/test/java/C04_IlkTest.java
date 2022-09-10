@@ -25,14 +25,20 @@ public class C04_IlkTest {
             System.out.println("Title testi PASSED");
         } else System.out.println("Title testi FAILED");
 
-        // 3- Url'nin amazon içerdiğini test ediniz
-        String actualUrl = driver.getCurrentUrl();
-        String arananKelime = "amazon";
-        if (actualUrl.contains(arananKelime)) {
-            System.out.println("Url testi PASSED");
-        } else System.out.println("Url testi FAILED");
+        // 3) Sayfa adresini(url) yazdirin
+        String url = driver.getCurrentUrl();
+        System.out.println("i URL degeri : " + url);
 
-        //4- Sayfayi kapatiniz
+        // 4) Sayfa url’inin “amazon” icerdigini test edin.
+        String urldeArananKelime = "amazon";
+        String urldeOlanKelime= driver.getCurrentUrl();
+        if (urldeOlanKelime.contains(urldeArananKelime)) {
+            System.out.println("URL testi PASSED");
+        } else
+            System.out.println("URL testi FAILED");
+
+
+        // 5) Sayfayi kapatiniz
         driver.close();
 
     }
