@@ -33,6 +33,7 @@ Sayfanin sizin istediginiz konum ve boyuta geldigini test edin
         System.out.println("Sayfanin Yeni Konumu = " + driver.manage().window().getPosition());
         System.out.println("Sayfanin Yeni boyutlari = " + driver.manage().window().getSize());
 
+
         Thread.sleep(2000);
         //Sayfayi kapatin
         driver.close();

@@ -20,8 +20,8 @@ public class C06_Locators {
 
         //Amazonda nutella aratınız
 
-        //WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
-        //aramaKutusu.sendKeys("Nutella"+ Keys.ENTER); // id uniqe olduğu bu sorunsuz çalışır
+        WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
+       aramaKutusu.sendKeys("Nutella"+ Keys.ENTER); // id uniqe olduğu bu sorunsuz çalışır
 
         //WebElement aramaKutusu = driver.findElement(By.name("field-keywords"));
 
@@ -35,8 +35,8 @@ public class C06_Locators {
         aldığımız bir locatar çalışmazsa alternatif locatorlar denemeliyiz
 
          */
-        driver.findElement(By.partialLinkText("oducts on Amazon")).click(); // a tag'ındaki link isminden istediğimiz bir parçayla locate edebiliriz
-        driver.findElement(By.linkText("Sell products on Amazon")).click();
+      //  driver.findElement(By.partialLinkText("oducts on Amazon")).click(); // a tag'ındaki link isminden istediğimiz bir parçayla locate edebiliriz
+       // driver.findElement(By.linkText("Sell products on Amazon")).click();
 
 
     }

@@ -34,7 +34,7 @@ public class C01_Odev01 {
 
         String actualTitle = driver.getTitle();
         String expectedKelime = "Amazon";
-        if (actualTitle.contains("Amazon")) {
+        if (actualTitle.contains(expectedKelime)) {
             System.out.println("Title Test PASSED");
         } else System.out.println("Title Test FAILED");
 
