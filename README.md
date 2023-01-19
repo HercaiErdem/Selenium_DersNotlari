@@ -12,7 +12,6 @@ rather than running tests. Therefore, short notes are written next to the method
 <a href="https://www.intelj.com" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQak-N8W03mK25slV1lwM80i0y1obRPPJOaLA&usqp=CAU" alt="intelj" width="60" height="30"/> </a>
   
   </p>
-    <img align=in the middle width=285 src="https://github.com/HercaiErdem/HercaiErdem/blob/main/3ee1d196a1548df00e138154961a4be5.gif" />
   
   <img align=in the middle width=285 src="https://github.com/NidaYucedal/NidaYucedal/blob/main/3ee1d196a1548df00e138154961a4be5.gif" />
 
